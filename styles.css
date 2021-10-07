@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+
+:root{
+    --soft-red: hsl(7, 99%, 70%);
+    --soft-red-low: hsla(7, 99%, 70%, 0.3);
+    --yellow:  hsl(51, 100%, 49%);
+    --yellow-low: hsla(51, 100%, 49%, 0.3);
+    --dark-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --very-dark-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --font-family-1: 'Fraunces';
+    --font-family-2: 'Barlow';
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+img{
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* HEADER */
+
+header{
+    background: url(images/desktop/image-header.jpg) no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    padding: 30px;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-menu {
+    display: flex;
+    margin-right: 30px;
+}
+
+.main-menu  li {
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.main-menu li a{
+    color: var(--white);
+    font-size: 1rem;
+}    
+
+.main-menu  li:hover{
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--very-dark-grayish-blue);
+}    
+
+.main-menu li:hover a {
+    color: inherit;
+}
+
+p{
+    color: var(--dark-grayish-blue);
+    font-size: 15px;
+}
+
+.brand{
+    width: 150px;
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    padding-top: 100px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: var(--font-family-1);
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+.hero img {
+    width: 30px;
+    margin-top: 130px;
+}
+
+/* ABOUT */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-2{
+    margin-bottom: -5px;
+}
+
+.card-4, .card-1 {
+    position: relative;
+}
+
+.text-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px 100px;
+}
+
+.text-card h2 {
+    font-family: var(--font-family-1);
+    font-weight: bold;
+    font-size: 45px;
+    width: 90%;
+    color: var(--very-dark-blue);
+}
+
+
+.text-card p {
+    width: 90%;
+    line-height: 2;
+    margin: 30px 0;
+}
+
+.text-card button {
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-family: var(--font-family-1);
+    font-weight: 900; 
+    color: var(--very-dark-blue);
+    position: relative;
+    cursor:pointer;
+    margin-left: 10px;
+}
+
+.card-1 button {
+    border-bottom: 5px solid var(--yellow-low);
+    border-radius: 5px;
+}
+
+.card-1 button:hover {
+    border-bottom: 5px solid var(--yellow);
+}
+
+.card-4 button {
+    border-bottom: 5px solid var(--soft-red-low);
+    border-radius: 5px;
+}
+
+.card-4 button:hover {
+    border-bottom: 5px solid var(--soft-red);
+}
+
+.card-5{
+    margin-top: -4px;
+    position: relative;
+}
+
+.card-5 h2{
+    font-family: var(--font-family-1);
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--dark-cyan);
+    position: absolute;
+    top: 60%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    text-align: center;
+}
+
+.card-5 p{
+    color: var(--dark-moderate-cyan);
+    position: absolute;
+    top: 70%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.card-6{
+    margin-top: -4px;
+    position: relative;
+}
+
+.card-6 h2{
+    font-family: var(--font-family-1);
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--very-dark-blue);
+    position: absolute;
+    top: 60%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    text-align: center;
+}
+
+.card-6 p{
+    color: var(--dark-blue);
+    position: absolute;
+    top: 70%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* testemonials section */
+
+#testemonials {
+    padding: 80px 80px;
+    text-align: center;
+}
+
+#testemonials h2 {
+    font-family: var(--font-family-1);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: var(--grayish-blue);
+}
+
+
+.testemonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.testemonials-grid img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 50px 0;
+}
+
+.testemonials-grid p {
+    line-height: 1.5;
+    margin-bottom: 50px;
+    font-size: 12px;
+    color: var(--dark-blue);
+}
+
+.testemonials-grid .test-name{
+    font-family: var(--font-family-1);
+    color: var(--very-dark-blue);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.testemonials-grid .test-role{
+    margin-top: 10px;
+    font-size: 10px;
+    color: var(--very-dark-grayish-blue);
+}
+
+/* Project section */
+
+.proj-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* footer */
+footer {
+    background-color: var(--dark-moderate-cyan);
+}
+
+footer li a:hover {
+    color: #FFF;
+}
+
+footer .footer-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer .footer-box .footer-brand{
+    width: 120px;
+    fill: var(--dark-cyan);
+}
+
+footer .footer-box .footer-menu{
+    display: flex;
+}
+
+footer .footer-menu a{
+    font-size: 14px;
+    color: var(--dark-cyan);
+}
+
+.footer-box li {
+    padding: 15px;
+}
+
+footer .footer-box .socials{
+    display: flex;
+    margin-top: 30px;
+}
+
+footer .socials a{
+    font-size: 20px;
+    color: var(--dark-cyan);
+}
+
+.attribution{
+    margin-top: 10px;
+}
+
+.hamburguer{
+    display: none;
+}
+
+.collapsible{
+    display: none;
+}
+
+/* Media queries */
+
+@media (max-width: 1024px){
+.card-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.testemonials-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.proj-box{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text-card{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 30px 0;
+}
+
+.text-card p{
+    width: 100%
+}
+
+.text-card button {
+    margin-left: 0;
+}
+.card-3{
+    order: 2;
+}
+.card-5, .card-6{
+    order: 3;
+}
+
+}
+
+@media (max-width: 760px){
+
+
+    .hamburguer {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        margin-left: 200px;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .collapsible{
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        background-color: #FFF;
+        width: 350px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-150%); 
+        transition: transform 0.2s  ease-in;
+    }
+
+    .collapsible ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .collapsible ul li {
+        padding: 20px 0;
+    }
+
+    .collapsible ul li a{
+        color: var(--grayish-blue);
+        font-size: 20px;
+    }
+
+    
+    .collapsible ul li:hover{
+    color: var(--very-dark-blue);
+    border-radius: 25px;
+    background-color: var(--yellow);
+    cursor: pointer;
+    text-transform: uppercase;
+    }    
+
+    .collapsible ul li:hover a {
+        color: inherit;
+    }
+
+}
+
+.collapsible-active {
+    transform: translateY(0%); 
+}
